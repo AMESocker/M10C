@@ -20,6 +20,28 @@ SO THAT I have quick access to their emails and GitHub profiles
 ```
 
 ## Acceptance Criteria
+Condensed TODO:
+Generate HTML with team roster
+    email link
+    gitHub Link
+Prompts manager
+    name
+    employee ID
+    email
+    office number
+    add engineer or intern or finish
+Prompts engineer
+    name
+    ID
+    email
+    GitHub
+    back to menu
+Prompts intern
+    name
+    ID
+    email
+    school
+    back to menu
 
 ```md
 GIVEN a command-line application that accepts user input
