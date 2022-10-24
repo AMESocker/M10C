@@ -1,0 +1,7 @@
+{
+    "name":"M10C",
+    "main":"index.js",
+    "scripts": {
+        "test": "jest"
+      }
+}
