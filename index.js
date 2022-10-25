@@ -5,14 +5,14 @@ const fs = require("fs");
 inquirer
     .prompt([
         {
-            type: "input",
-            message: "What is the name of the employee?",
-            name: "employeeName",
+            type: 'input',
+            message: 'What is the name of the employee?',
+            name: 'employee',
         },{
-            name: "id",
-            message: "What is the id?",
-            type: "input"
-        }
+            type: 'input',
+            message: 'What is the id?',
+            name: 'id',
+        },
     ])
     .then((answer) => {
             console.log(answer);
@@ -26,8 +26,7 @@ inquirer
     });    
 
 function generateHtml(data) {
-    return
-    `<!DOCTYPE html>
+    return`<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -40,4 +39,4 @@ function generateHtml(data) {
     </body>
     </html>`;
 }
-module.exports = Employee;
+// module.exports = Employee;
