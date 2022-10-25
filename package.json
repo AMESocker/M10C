@@ -1,7 +1,10 @@
 {
-    "name":"M10C",
-    "main":"index.js",
+    "name": "M10C-Team-Profile-Generator",
+    "main": "index.js",
     "scripts": {
         "test": "jest"
-      }
+    },
+    "dependencies": {
+        "inquirer": "^8.2.5"
+    }
 }

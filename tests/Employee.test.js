@@ -1,17 +1,19 @@
-const Employee = require('../index.js');
-const tests = require('../index.js');
+const Employee = require('../lib/employee');
+
+
+
 
 //----Employee Test----
 
 describe('Employee',() => {
     it('Should return with a property of name', () => {
         //Assert
-        expect(Employee.name).toBe('name');
+        expect(new Employee("Jack")).toBe('Jack');
     });
     it('Should return with a property of id', () => {
-        expect(Employee).toBe('id')
+        expect(new Employee).toBe('id')
     });
-    it('Should return with a method of getName', () => {
+    it('Should return with a property of email', () => {
         expect(Employee).toBe()
     })
 });

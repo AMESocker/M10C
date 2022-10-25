@@ -42,6 +42,8 @@ Prompts intern
     email
     school
     back to menu
+Write HTML and CSS
+
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -106,3 +108,15 @@ In addition to `Employee`'s properties and methods, `Intern` will also have the 
 * `getRole()`&mdash;overridden to return `'Intern'`
 
 Finally, although it’s not a requirement, consider adding validation to ensure that user input is in the proper format.
+
+### Walkthrough Video: 
+
+* A walkthrough video that demonstrates the functionality of the Team Profile Generator and passing tests must be submitted, and a link to the video should be included in your README file.
+
+* The walkthrough video must show all four tests passing from the command line.
+
+* The walkthrough video must demonstrate how a user would invoke the application from the command line.
+
+* The walkthrough video must demonstrate how a user would enter responses to all of the prompts in the application.
+
+* The walkthrough video must demonstrate a generated HTML file that matches the user input.
