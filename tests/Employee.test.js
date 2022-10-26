@@ -1,15 +1,14 @@
 const Employee = require('../lib/employee');
 
 describe('Employee',() => {
-    it('Should return with a property of name', () => {
+    it('Should return with a property of name, id and email', () => {
         //Assert
-        
-        expect(Employee.name('Jack')).toBe('Jack');
+        const employee = new Employee('Jack','103193','Jack@pumpkin.king');
+
+        expect(employee.empName).toBe('Jack');
+        expect(employee.id).toBe('103193');
+        expect(employee.email).toBe('Jack@pumpkin.king')
+
+   
     });
-    it('Should return with a property of id', () => {
-        expect(new Employee).toBe('id')
-    });
-    it('Should return with a property of email', () => {
-        expect(Employee).toBe()
-    })
 });

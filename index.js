@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-// == require('./lib/employee.js')
+// const Employee = require('./lib/employee.js')
 const fs = require("fs");
 
 //----
@@ -24,8 +24,8 @@ function promptManager(){inquirer
             name: 'officeNum'
         },
     ])
-    .then((data) => {
-        console.log(data);
+    .then((dataMan) => {
+        // console.log(dataMan);
         promptMenu()   
     })
     .catch((error)=> {
@@ -47,11 +47,18 @@ function promptMenu(){inquirer
     },
     ])
     .then((data) => {
-        console.log(data);
+        // console.log(data);
         if (data.menu === 'Engineer') {
             promptEngineer()
         }else if (data.menu === 'Intern' ) {
             promptIntern()
+        }else if (data.menu === 'Finish') {
+            // generateHtml(data);
+            console.log(data);
+            console.log(dataMan);
+            fs.writeFile('GenerateHtml.html', generateHtml(data), (err)=> {
+                err ? console.error(err) : console.log("Christmas Town?")
+            })
         }
     })
     .catch((error)=> {
@@ -87,7 +94,7 @@ function promptEngineer(){inquirer
         },
     ])
     .then((data) => {
-        console.log(data);
+        // console.log(dataEng);
         promptMenu()
     })
     .catch((error)=> {
@@ -121,7 +128,7 @@ function promptIntern(){inquirer
         },
     ])
     .then((data) => {
-        console.log(data);
+        // console.log(data);
         promptMenu();
     })
     .catch((error)=> {
@@ -147,9 +154,25 @@ function generateHtml(data) {
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Employee Data</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     </head>
-    <body>
-        
+    <body style="background-color:rgb(250, 249, 215)">
+        <header style="background-color:rgb(92, 163, 240);"><h1>Team</h1>
+    
+        </header>
+        <main>
+            <div class="card" style="width: 18rem; margin: 40px;">
+                <div class="card-header">
+                  Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">An item</li>
+                  <li class="list-group-item">A second item</li>
+                  <li class="list-group-item">A third item</li>
+                </ul>
+              </div>
+            </table>
+        </main>
     </body>
     </html>`;
 }
