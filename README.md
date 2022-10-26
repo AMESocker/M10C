@@ -24,29 +24,27 @@ Condensed TODO:
 Generate HTML with team roster
     email link
     gitHub Link
+Write HTML and CSS
+
+Complete:
 Prompts manager
     name
     employee ID
     email
-
     office number
     add engineer or intern or finish
 Prompts engineer
     name
     employee ID
     email
-
     GitHub
     back to menu
 Prompts intern
     name
     employee ID
-    email
-    
+    email  
     school
     back to menu
-Write HTML and CSS
-
 
 ```md
 GIVEN a command-line application that accepts user input
