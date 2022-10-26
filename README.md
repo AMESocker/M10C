@@ -28,18 +28,21 @@ Prompts manager
     name
     employee ID
     email
+
     office number
     add engineer or intern or finish
 Prompts engineer
     name
-    ID
+    employee ID
     email
+
     GitHub
     back to menu
 Prompts intern
     name
-    ID
+    employee ID
     email
+    
     school
     back to menu
 Write HTML and CSS
@@ -83,6 +86,7 @@ The first class is an `Employee` parent class with the following properties and 
 * `name`
 * `id`
 * `email`
+
 * `getName()`
 * `getId()`
 * `getEmail()`
